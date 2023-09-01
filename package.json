@@ -1,0 +1,27 @@
+{
+  "name": "webcrawler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tmbrody/webCrawler.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tmbrody/webCrawler/issues"
+  },
+  "homepage": "https://github.com/tmbrody/webCrawler#readme",
+  "devDependencies": {
+    "jest": "^29.6.3"
+  },
+  "dependencies": {
+    "jsdom": "^22.1.0",
+    "node-fetch": "^3.3.2"
+  }
+}
