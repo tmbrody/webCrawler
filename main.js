@@ -1,4 +1,5 @@
 const { crawlPage } = require('./crawl');
+const { printReport } = require('./report');
 
 async function main() {
     const args = process.argv.slice(2);
@@ -10,11 +11,11 @@ async function main() {
 
     const baseURL = args[0];
 
-    console.log(`Crawler is starting at the url: ${baseURL}`);
+    console.log(`Crawler is starting at the url: ${baseURL}\n`);
 
     const pages = await crawlPage(baseURL, baseURL, {});
 
-    console.log(pages);
+    printReport(pages);
 }
 
 main();
